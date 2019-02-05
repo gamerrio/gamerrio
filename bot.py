@@ -12,7 +12,7 @@ bot = commands.Bot(command_prefix=commands.when_mentioned_or("-"))
 
 bot.remove_command('help')
 
-reddit = praw.Reddit(client_id='MT5L5oHKtkiQ0w', client_secret='2p99RBQJaGaQZvqz6LtXAsq2XS4', user_agent='windows 10: Meme Scraper (by /u/PotatoLord1207)')
+reddit = praw.Reddit(client_id='Your_id', client_secret='Your_Secret', user_agent='windows 10: Meme Scraper (by /u/PotatoLord1207)')
 
 @bot.event
 async def on_ready():
@@ -301,4 +301,4 @@ async def moonwalk(ctx):
           s = t+l[i%2]
           await m1.edit(content=s)
 
-bot.run("NDA2MTMzNTcwMDM0MzM1NzU0.DyJJSA.zouoU8NfnHM2pdT0dO1PtPHoiW0")
+bot.run("token")
