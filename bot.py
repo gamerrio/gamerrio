@@ -260,30 +260,6 @@ async def guess(ctx):
         embed.set_thumbnail(url='https://cdn.shopify.com/s/files/1/1061/1924/products/Very_sad_emoji_icon_png_large.png?v=1480481019')
         await ctx.send(embed=embed)
 
-@bot.command(pass_context=True)
-async def pen(ctx):
-    async with ctx.typing():
-       mes = await ctx.send("`¯\_(ツ)_/¯`")
-       await mes.edit(content=":pen_ballpoint:         \n¯\_(ツ)_/¯")
-       await asyncio.sleep(1)      
-       await mes.edit(content=":pen_ballpoint:         :apple:\n¯\_(ツ)_/¯")
-       await asyncio.sleep(1)      
-       await mes.edit(content=":apple::pen_ballpoint:")
-       await asyncio.sleep(2.5)
-       await mes.edit(content=":pen_ballpoint:         \n¯\_(ツ)_/¯")
-       await asyncio.sleep(1)      
-       await mes.edit(content=":pen_ballpoint:         :pineapple:\n¯\_(ツ)_/¯")
-       await asyncio.sleep(1)      
-       await mes.edit(content=":pineapple::pen_ballpoint:")
-       await asyncio.sleep(2.5)    
-       await mes.edit(content=":apple::pen_ballpoint:")
-       await asyncio.sleep(1)      
-       await mes.edit(content=":pineapple::pen_ballpoint:")
-       await asyncio.sleep(2.5)        
-       await mes.edit(content=":pen_ballpoint:")        
-       await mes.edit(content=":pen_ballpoint::pineapple:")     
-       await mes.edit(content=":pen_ballpoint::pineapple::apple:")     
-       await mes.edit(content=":pen_ballpoint::pineapple::apple::pen_ballpoint:")
 
 @bot.command(pass_context=True)
 async def face(ctx):
